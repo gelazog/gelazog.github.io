@@ -1,0 +1,171 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* Encabezado */
+.header {
+  background-color: #2d8659;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Barra de navegación */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #4caf50;
+  padding: 10px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  background-color: #367c39;
+  border-radius: 5px;
+}
+
+/* Contenido */
+.content {
+  width: 80%;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+h2 {
+  color: #2d8659;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+/* Sección de ubicación */
+.ubicacion {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.mapa {
+  width: 80%;
+  height: 200px;
+  background: #ddd;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/* Pie de página */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+
+/* Contenedor de proyectos */
+.proyectos-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Estilos para cada proyecto */
+.proyecto {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.proyecto img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+.proyecto .info {
+  flex-grow: 1;
+}
+
+.proyecto h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #2d8659;
+}
+
+.proyecto p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Contenedor del equipo */
+.equipo-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+/* Estilos para cada miembro del equipo */
+.miembro {
+  text-align: center;
+}
+
+.miembro img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #ddd;
+}
+
+.miembro h3 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+  color: #2d8659;
+}
+
+.miembro p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Sección de ubicación */
+.ubicacion {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.mapa {
+  width: 80%;
+  height: 200px;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
