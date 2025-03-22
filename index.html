@@ -7,43 +7,55 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
-        <h1>Robybam7752</h1>
-    </header>
-    
-    <nav class="navbar">
-        <a href="index.html">Inicio</a>
-        <a href="pages/proyectos.html">Proyectos</a>
-        <a href="pages/nosotros.html">Sobre Nosotros</a>
-        <a href="#">Mision</a>
-    </nav>
-    
+
+    <!-- Cargar Header -->
+    <div id="header"></div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bienvenidos al club Robybam7752</h1>
+            <p>Un espacio dedicado a la educación, la tecnología y la robótica para niños y jóvenes.</p>
+        </div>
+    </section>
+
     <section class="content">
         <h2>¿Quiénes somos?</h2>
-        <p>Somos parte del Centro Comunitario El Florido, donde buscamos fortalecer el conocimiento de los niños y formar un equipo para competir en diversos torneos de robótica de manera gratuita.</p>
-        
+        <p>Somos un  equipo enfocado en fortalecer el conocimiento de los niños a través de la robótica y la tecnología. Nuestra misión es formar equipos preparados para competir en torneos y desarrollar habilidades clave para el futuro.</p>
+
         <h2>Objetivos del Taller</h2>
-        <ul>
-            <li>Desarrollar habilidades técnicas.</li>
-            <li>Fomentar el trabajo en equipo.</li>
-            <li>Promover la creatividad y la resolución de problemas.</li>
-        </ul>
-        
+        <div class="objetivos">
+            <div class="objetivo">
+                <img src="img/habilidad.png" alt="Habilidades Técnicas">
+                <p>Desarrollar habilidades técnicas en programación y robótica.</p>
+            </div>
+            <div class="objetivo">
+                <img src="img/equipo.png" alt="Trabajo en Equipo">
+                <p>Fomentar el trabajo en equipo y la colaboración.</p>
+            </div>
+            <div class="objetivo">
+                <img src="img/creatividad.png" alt="Creatividad">
+                <p>Promover la creatividad y la resolución de problemas.</p>
+            </div>
+        </div>
+
         <h2>Requisitos</h2>
-        <p><strong>Edad:</strong> 08 - 15 años</p>
-        
+        <p><strong>Edad:</strong> 8 - 15 años</p>
+
         <h2>Horarios</h2>
         <p><strong>Sábados:</strong> 09:00 am - 01:00 pm</p>
     </section>
-    
+
     <section class="ubicacion">
         <h2>Ubicación</h2>
-        <div class="mapa"></div>
-        <p>Tijuana, Baja California</p>
+        <p>Nos encontramos en el Centro Comunitario Florido IV Sección, Tijuana, Baja California.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1248.5812510227572!2d-116.84549980791974!3d32.4781193516301!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d93ef5e32571c5%3A0x999a63af882569e!2sCentro%20Comunitario%20Florido%20IV%20Sec.!5e1!3m2!1ses!2smx!4v1742584941248!5m2!1ses!2smx"
+        width="100%" height="450" style="border:0;" 
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
-    
-    <footer class="footer">
-        <p>Contacto: info@ccRobotica.mx | Ubicación: Tijuana, Baja California</p>
-    </footer>
+
+    <!-- Cargar Footer -->
+    <div id="footer"></div>
+
+    <script src="js/loadComponents.js"></script>
 </body>
 </html>
