@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const basePath = window.location.pathname.includes("/pages/") ? "../partials/" : "partials/";
+    const basePath = window.location.pathname.includes("/pages/") ? "../partials/" : "./partials/";
     
     loadComponent("header", basePath + "header.html");
     loadComponent("footer", basePath + "footer.html");
