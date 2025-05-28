@@ -1,0 +1,117 @@
+/* nosotros.css - Estilo visual para la página Sobre Nosotros */
+
+.sobre-nosotros {
+  text-align: center;
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
+  color: #333;
+}
+
+.sobre-nosotros h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #2d8659;
+}
+
+.sobre-nosotros p {
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: auto;
+}
+
+.equipo {
+  background: #f8f8f8;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 16px;
+  margin-top: 40px;
+}
+
+.equipo h2 {
+  font-size: 34px;
+  color: #2d8659;
+  margin-bottom: 10px;
+}
+
+.equipo p {
+  font-size: 17px;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+.equipo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.miembro {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 230px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.miembro:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.miembro img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.miembro h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.miembro p {
+  font-size: 14px;
+  color: #777;
+  margin: 0;
+}
+
+.ubicacion {
+  text-align: center;
+  padding: 60px 20px;
+  margin-top: 60px;
+  background: #eef2f9;
+  border-radius: 16px;
+}
+
+.ubicacion h2 {
+  font-size: 32px;
+  color: #2d8659;
+  margin-bottom: 20px;
+}
+
+.ubicacion p {
+  font-size: 17px;
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .equipo-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .miembro {
+    width: 90%;
+  }
+}

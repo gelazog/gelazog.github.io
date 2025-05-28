@@ -1,0 +1,25 @@
+/* language.css - Estilo para el botón de cambio de idioma */
+
+.language-toggle {
+  margin: 10px 20px;
+  padding: 8px 16px;
+  background: linear-gradient(45deg, #007bff, #00c6ff);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.language-toggle:hover {
+  background: linear-gradient(45deg, #0056b3, #0094cc);
+  transform: scale(1.05);
+}
+
+.language-toggle:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0,123,255,0.4);
+}

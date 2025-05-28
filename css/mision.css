@@ -1,0 +1,100 @@
+/* mision.css - Estilo visual moderno y dinámico para la página de Misión */
+
+.mision-container {
+  text-align: center;
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
+  color: #333;
+}
+
+.mision-container h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #2d8659;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.mision-container p {
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: auto;
+}
+
+.mision-content {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.mision-item {
+  background: white;
+  padding: 25px 20px;
+  border-radius: 16px;
+  width: 280px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.mision-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.mision-item img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 2px solid #2d8659;
+}
+
+.mision-item h3 {
+  font-size: 20px;
+  color: #2d8659;
+  margin-bottom: 10px;
+}
+
+.mision-item p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.vision {
+  background: #f4f4f4;
+  padding: 60px 20px;
+  border-radius: 16px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.vision h2 {
+  font-size: 32px;
+  color: #2d8659;
+  margin-bottom: 20px;
+}
+
+.vision p {
+  font-size: 17px;
+  color: #444;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .mision-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mision-item {
+    width: 90%;
+  }
+}
