@@ -1,5 +1,14 @@
 /* language.css - Estilo para el botón de cambio de idioma */
 
+/* Contenedor para el botón de idioma, asegúrate de asignar esta clase al elemento padre en tu HTML */
+.language-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.5rem;
+}
+
 .language-toggle {
   margin: 10px 20px;
   padding: 8px 16px;
@@ -9,9 +18,13 @@
   font-weight: bold;
   border: none;
   border-radius: 30px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: background 0.3s ease, transform 0.2s ease;
+  /* Para que crezca/encoga dinámicamente en móvil */
+  flex: 0 1 auto;
+  max-width: 100%;
+  white-space: nowrap;
 }
 
 .language-toggle:hover {
@@ -21,5 +34,23 @@
 
 .language-toggle:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(0,123,255,0.4);
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.4);
+}
+
+/* Ajustes específicos para pantallas móviles */
+@media (max-width: 768px) {
+  .language-toggle {
+    margin: 8px 10px;
+    padding: 6px 12px;
+    font-size: 12px;
+    flex: 1 1 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .language-toggle {
+    margin: 6px 8px;
+    padding: 4px 10px;
+    font-size: 11px;
+  }
 }

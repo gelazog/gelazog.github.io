@@ -1,134 +1,4 @@
-/* index.css - Estilos usados exclusivamente por index.html */
-/* 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f8fb;
-  margin: 0;
-  padding: 0;
-  color: #222;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: #001f3f;
-  color: white;
-}
-
-nav a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-nav a:hover {
-  color: #00c6ff;
-}
-
-.hero {
-  background: url('../img/robotics-bg.jpg') no-repeat center center/cover;
-  text-align: center;
-  padding: 100px 20px;
-  color: white;
-}
-
-.hero h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 18px;
-  max-width: 700px;
-  margin: auto;
-}
-
-.section {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.section h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #003366;
-}
-
-.section p {
-  font-size: 16px;
-  max-width: 800px;
-  margin: auto;
-}
-
-footer {
-  text-align: center;
-  padding: 1rem;
-  font-size: 14px;
-  background-color: #001f3f;
-  color: #ccc;
-}
-
-.language-toggle {
-  margin: 10px 20px;
-  padding: 8px 16px;
-  background: linear-gradient(45deg, #2d6cdf, #00c6ff);
-  color: white;
-  font-size: 14px;
-  font-weight: bold;
-  border: none;
-  border-radius: 30px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.language-toggle:hover {
-  background: linear-gradient(45deg, #1c4fb5, #0094cc);
-  transform: scale(1.05);
-}
-
-.language-toggle:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(0,123,255,0.4);
-}
-
-.features {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  margin-top: 40px;
-}
-
-.feature {
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  max-width: 300px;
-  text-align: center;
-}
-
-.feature img {
-  width: 60px;
-  margin-bottom: 15px;
-}
-
-.feature h3 {
-  color: #2d6cdf;
-  margin-bottom: 10px;
-}
-
-.feature p {
-  color: #333;
-  font-size: 15px;
-} */
-
-
-/* Estilos renovados para index.css - Robybam */
+/* index.css - Robybam7752 styles con nav y botón responsive */
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -139,10 +9,12 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Navbar: contenedor flexible para enlaces y botón */
 nav {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
   padding: 1rem 2rem;
   background-color: #0a2342;
   color: white;
@@ -160,16 +32,46 @@ nav .logo {
 
 nav a {
   color: white;
-  margin: 0 12px;
+  margin: 0.5rem 1rem;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
+  flex: 0 1 auto;
 }
 
 nav a:hover {
   color: #00c6ff;
 }
 
+/* Botón de cambio de idioma */
+.language-toggle {
+  margin: 0.5rem;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  flex: 0 1 auto;
+  max-width: 100%;
+  white-space: nowrap;
+}
+
+.language-toggle:hover {
+  background: linear-gradient(135deg, #0056b3, #0094cc);
+  transform: scale(1.05);
+}
+
+.language-toggle:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.4);
+}
+
+/* Hero section */
 .hero {
   background: url('../img/robotics-bg.jpg') no-repeat center center/cover;
   text-align: center;
@@ -190,6 +92,7 @@ nav a:hover {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
+/* Sections */
 .section {
   padding: 80px 20px;
   text-align: center;
@@ -257,26 +160,29 @@ footer {
   color: #ccc;
 }
 
-.language-toggle {
-  margin: 0 10px;
-  padding: 8px 18px;
-  background: linear-gradient(135deg, #007bff, #00c6ff);
-  color: white;
-  font-size: 14px;
-  font-weight: bold;
-  border: none;
-  border-radius: 25px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
+/* Media Queries: dispositivos medianos */
+@media (max-width: 768px) {
+  nav a, .language-toggle {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  .language-toggle {
+    margin: 0.4rem;
+    padding: 6px 12px;
+    font-size: 12px;
+  }
 }
 
-.language-toggle:hover {
-  background: linear-gradient(135deg, #0056b3, #0094cc);
-  transform: scale(1.05);
-}
-
-.language-toggle:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(0,123,255,0.4);
+/* Media Queries: dispositivos pequeños */
+@media (max-width: 480px) {
+  nav a {
+    flex: 1 1 100%;
+    text-align: left;
+    margin: 0.3rem 0;
+  }
+  .language-toggle {
+    margin: 0.3rem;
+    padding: 4px 10px;
+    font-size: 11px;
+  }
 }
